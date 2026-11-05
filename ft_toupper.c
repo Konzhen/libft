@@ -6,13 +6,13 @@
 /*   By: jbutte <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:14:30 by jbutte            #+#    #+#             */
-/*   Updated: 2022/09/30 11:07:38 by jbutte           ###   ########.fr       */
+/*   Updated: 2022/10/22 15:55:19 by jbutte           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int character)
+int	ft_toupper(int c)
 {
-	if (character <= 122 && character >= 97)
-		character - 32;
-	return (character);
+	if (c <= 122 && c >= 97)
+		c -= 32;
+	return (c);
 }

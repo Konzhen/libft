@@ -6,18 +6,17 @@
 /*   By: jbutte <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 16:09:22 by jbutte            #+#    #+#             */
-/*   Updated: 2022/09/26 16:11:48 by jbutte           ###   ########.fr       */
+/*   Updated: 2022/10/20 16:19:28 by jbutte           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-int	strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (*str++)
-	{
+	while (str[i])
 		i++;
-	}
 	return (i);
 }

@@ -6,13 +6,11 @@
 /*   By: jbutte <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 16:08:54 by jbutte            #+#    #+#             */
-/*   Updated: 2022/09/26 16:08:57 by jbutte           ###   ########.fr       */
+/*   Updated: 2022/10/20 16:16:27 by jbutte           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 		return (1);

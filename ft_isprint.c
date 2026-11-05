@@ -6,15 +6,13 @@
 /*   By: jbutte <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 16:09:08 by jbutte            #+#    #+#             */
-/*   Updated: 2022/09/26 16:09:09 by jbutte           ###   ########.fr       */
+/*   Updated: 2022/10/20 16:16:33 by jbutte           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	isprint(int c)
+int	ft_isprint(int c)
 {
-	if (c >= 20 && c <= 127)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }

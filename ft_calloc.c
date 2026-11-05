@@ -6,16 +6,27 @@
 /*   By: jbutte <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 15:56:20 by jbutte            #+#    #+#             */
-/*   Updated: 2022/10/01 17:36:40 by jbutte           ###   ########.fr       */
+/*   Updated: 2022/10/22 15:35:35 by jbutte           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-#include <stddef.h>
-#include <stdlib.h>
-
-void	*calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	char	*tab;
-	tab	= malloc(sizeof(size) * nmemb);
-	return (tab);
+
+	if (!size || !nmemb)
+	{
+		tab = malloc(0);
+		if (!tab)
+			return (NULL);
+		return (tab);
+	}
+	if ((nmemb * size) / nmemb != size)
+		return (0);
+	tab = malloc(nmemb * size);
+	if (!tab)
+		return (NULL);
+	ft_bzero(tab, (nmemb * size));
+	return ((void *)tab);
 }

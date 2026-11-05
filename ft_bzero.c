@@ -6,16 +6,20 @@
 /*   By: jbutte <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 17:09:31 by jbutte            #+#    #+#             */
-/*   Updated: 2022/09/27 17:13:36 by jbutte           ###   ########.fr       */
+/*   Updated: 2022/10/25 17:28:14 by jbutte           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
 
-void	ft_bzero(void *str, size_t size)
+void	ft_bzero(void *s, size_t n)
 {
-	while (size--)
+	unsigned char	*tmp;
+
+	tmp = (unsigned char *)s;
+	while (n)
 	{
-		*str = 0;
-		str++;
+		n--;
+		*tmp = 0;
+		tmp++;
 	}
 }

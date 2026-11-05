@@ -6,13 +6,11 @@
 /*   By: jbutte <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 16:08:00 by jbutte            #+#    #+#             */
-/*   Updated: 2022/09/26 16:08:06 by jbutte           ###   ########.fr       */
+/*   Updated: 2022/10/20 16:16:15 by jbutte           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	isdigit(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

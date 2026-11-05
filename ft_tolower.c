@@ -6,13 +6,13 @@
 /*   By: jbutte <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 15:11:44 by jbutte            #+#    #+#             */
-/*   Updated: 2022/09/30 10:35:21 by jbutte           ###   ########.fr       */
+/*   Updated: 2022/10/22 15:54:58 by jbutte           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int character)
+int	ft_tolower(int c)
 {
-	if (character <= 90 && character >= 65)
-		character + 32;
-	return (character);
+	if (c <= 90 && c >= 65)
+		c += 32;
+	return (c);
 }
